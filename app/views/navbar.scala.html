@@ -1,0 +1,9 @@
+@(animeList:List[String])
+<navbar class="vertical-menu">
+    <ul>
+        <li ><a href="/">Home</a></li>
+        <li ><a href="/Info List">InfoList</a></li>
+        @for(ele<-animeList){
+        <li><a href="/video/@ele">@ele</a></li>}
+    </ul>
+</navbar>
